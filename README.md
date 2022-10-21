@@ -31,4 +31,4 @@ services:
       - "host.docker.internal:127.0.0.1"
 ```
 
-Start using `docker-compose up -d --build` or `docker-compose build --pull && docker-compose up -d`
+Start with `docker-compose up -d --build` or `docker-compose build --pull && docker-compose up -d`
