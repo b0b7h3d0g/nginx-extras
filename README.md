@@ -19,6 +19,8 @@ services:
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
     volumes:
       - ./html:/var/www/html:ro
+      - ./conf:/etc/nginx/conf.d:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - /dev/urandom:/dev/random
     tmpfs:
       - /run
