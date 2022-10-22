@@ -30,7 +30,7 @@ services:
     read_only: true
     network_mode: host
     extra_hosts:
-      - "host.docker.internal:127.0.0.1"
+      - "host.docker.internal:host-gateway"
 ```
 
 Start with `docker-compose up -d --build` or `docker-compose build --pull && docker-compose up -d`
